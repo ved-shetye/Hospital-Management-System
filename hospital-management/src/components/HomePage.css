@@ -1,0 +1,60 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full page height */
+  text-align: center;
+  background-color: #f4f4f4; /* Light background */
+  padding: 0 20px; /* Add padding for mobile view */
+}
+
+.home-title {
+  font-size: 6rem; /* Larger title size */
+  font-weight: bold; /* Bold title */
+  color: #2cb3a3; /* Custom color for the title */
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 4rem; /* Decrease title size on smaller screens */
+  }
+
+  h3 {
+    font-size: 1.2rem; /* Decrease subtitle size */
+  }
+
+  .avatar-container {
+    flex-direction: column; /* Stack avatars vertically on smaller screens */
+    gap: 20px; /* Reduce gap between avatars */
+  }
+}
+
+/* Responsive design for very small screens (mobile devices) */
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 3rem; /* Further reduce title size */
+  }
+
+  h3 {
+    font-size: 1rem; /* Reduce subtitle size */
+  }
+
+  .avatar-container {
+    gap: 15px; /* Further reduce gap between avatars */
+  }
+}

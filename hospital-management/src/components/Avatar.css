@@ -1,0 +1,22 @@
+.avatar {
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+}
+
+.avatar-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Make the image circular */
+  border: 3px solid #333; /* Add a border around the avatar */
+  object-fit: cover; /* Ensure the image scales properly */
+}
+
+h2 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
